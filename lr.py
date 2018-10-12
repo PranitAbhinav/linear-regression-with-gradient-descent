@@ -32,7 +32,7 @@ def gradient_descent(m,c,df,prec):
  #   pass
 
 
-lin_reg= pd.read_csv('test.csv',sep=",")
+lin_reg= pd.read_csv('USA_Housing.csv',sep=",")
 df=pd.DataFrame(lin_reg)[['LotFrontage','LotArea']].dropna()
 
 df.plot(kind='scatter',x='LotFrontage',y='LotArea')
